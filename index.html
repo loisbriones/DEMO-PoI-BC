@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proof of Importance · demo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="css/demo.css">
+</head>
+<body>
+<div class="app">
+  <header>
+    <div class="brand"><h1>Proof of Importance</h1><a href="../">← inicio</a></div>
+    <nav class="sections" id="sections" aria-label="Secciones"></nav>
+  </header>
+
+  <main class="stage">
+    <section class="map" aria-label="Mapa de cuentas">
+      <svg id="svg" viewBox="0 0 700 560" role="img" aria-label="Cuentas y pagos de la red de ejemplo"></svg>
+      <div class="legend" id="legend"></div>
+    </section>
+
+    <aside class="panel">
+      <div class="steps" id="steps"></div>
+      <p class="eyebrow" id="eyebrow"></p>
+      <h2 id="stitle"></h2>
+      <p id="stext"></p>
+      <div id="viz"></div>
+      <details class="why" id="why"><summary>¿Por qué?</summary><div id="whybody"></div></details>
+    </aside>
+  </main>
+
+  <footer class="player">
+    <button class="ctrl" id="restart" title="Volver al principio del paso">↺</button>
+    <button class="ctrl" id="prev" title="Anterior (←)">◀</button>
+    <button class="ctrl primary" id="play" title="Reproducir / pausa (espacio)">▶ Reproducir</button>
+    <button class="ctrl" id="next" title="Siguiente (→)">▶</button>
+    <div class="progress" id="prog"></div>
+    <p class="keys"><kbd>←</kbd> <kbd>→</kbd> avanzar · <kbd>espacio</kbd> reproducir · <kbd>1</kbd> <kbd>2</kbd> secciones</p>
+  </footer>
+</div>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
